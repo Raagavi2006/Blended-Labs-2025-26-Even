@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: RAAGAVI R M
+* **Register Number**: 212224220074
+* **Date of Submission**: 17-03-2026
 
 ---
 
@@ -85,13 +85,19 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1.Created a VPC I went to the VPC dashboard in AWS and created a new VPC with the CIDR block 10.0.0.0/16. I gave it a meaningful name so I could easily identify it later.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+2.Created a Public Subnet Inside the VPC, I created a new subnet with the CIDR block 10.0.1.0/24. I enabled the option to auto-assign public IPv4 addresses so that any instance launched in this subnet would automatically receive a public IP.
+
+3.Created and Attached an Internet Gateway I created a new Internet Gateway and attached it to my VPC. This allows resources inside the VPC to communicate with the internet.
+
+4.Configured Route Table I created a new route table and added a default route 0.0.0.0/0 pointing to the Internet Gateway. Then I associated this route table with the public subnet to allow internet access.
+
+5.Created a Security Group I created a security group and added inbound rules to allow: SSH (Port 22) for remote access HTTP (Port 80) to allow web traffic.
+
+6.Launched an EC2 Instance I launched a new EC2 instance using the Amazon Linux 2 AMI and selected the t2.micro instance type. I selected the public subnet, attached the security group I created, and selected my key pair for SSH access.
+
+
 
 ---
 
@@ -99,19 +105,22 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ### Screenshot 1: VPC and Subnet Details
 
-(Insert Screenshot Here)
+<img width="1915" height="1025" alt="Screenshot 2026-02-17 104634" src="https://github.com/user-attachments/assets/acbd2b0a-f25a-4493-9d02-77804120668c" />
+
+<img width="1913" height="1020" alt="Screenshot 2026-02-17 104926" src="https://github.com/user-attachments/assets/a51f012c-ff9c-4d6f-9161-2e36ca29e6e0" />
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+<img width="1914" height="1011" alt="Screenshot 2026-02-17 111252" src="https://github.com/user-attachments/assets/7277b595-41e5-4adb-9935-96a8b45f78c3" />
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-(Insert Screenshot Here)
+<img width="1913" height="1085" alt="Screenshot 2026-02-17 111459" src="https://github.com/user-attachments/assets/6bc4f533-86c9-4a17-b789-23a3ac160f22" />
+
 
 ---
 
