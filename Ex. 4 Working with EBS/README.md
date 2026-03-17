@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: RAAGAVI R M
+* **Register Number**: 212224220074
+* **Date of Submission**: 17-03-2026
 
 ---
 
@@ -78,13 +78,11 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
-
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. The workflow begins by accessing the Amazon Elastic Block Store through the EC2 dashboard in the AWS Management Console, where different volume types such as General Purpose SSD (gp2/gp3), Provisioned IOPS SSD, Throughput Optimized HDD, and Cold HDD are explored to understand their performance and use cases.
+2. Next, a new EBS volume is created by selecting the appropriate size and volume type, ensuring that it is placed in the same Availability Zone as the EC2 instance so that it can be successfully attached.
+3. After creation, the EBS volume is attached to the running EC2 instance as an additional block storage device, making it available for use within the instance.
+4. The user then connects to the EC2 instance via SSH and formats the attached volume using a suitable file system such as ext4, followed by mounting it to a directory like /mnt/ebs or /data so that it can be accessed like a regular storage location.
+5. Finally, files and directories are created within the mounted volume to store sample data, and the instance is rebooted to verify data persistence, confirming that the stored data remains intact even after the restart.
 
 ---
 
@@ -92,19 +90,20 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ### Screenshot 1: EBS Volume Created
 
-(Insert Screenshot Here)
+<img width="1914" height="1020" alt="Screenshot 2026-03-10 161142" src="https://github.com/user-attachments/assets/e21cf677-3366-4c34-baa5-e1dbcfe7fc51" />
 
 ---
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
+<img width="1919" height="1028" alt="Screenshot 2026-03-10 155933" src="https://github.com/user-attachments/assets/316a80f9-0101-42b8-9793-f97c636a0e23" />
 
 ---
 
 ### Screenshot 3: Mounted Volume with Data
 
-(Insert Screenshot Here)
+<img width="1911" height="1025" alt="Screenshot 2026-03-10 161246" src="https://github.com/user-attachments/assets/bcc8a76c-54dd-4c7b-b5ef-e43b2256b9f5" />
+e)
 
 ---
 
