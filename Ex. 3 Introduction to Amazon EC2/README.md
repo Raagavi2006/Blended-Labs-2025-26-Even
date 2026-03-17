@@ -96,13 +96,11 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
-
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. The workflow begins by logging into the AWS Management Console and accessing the EC2 dashboard, where the user explores key components such as Instances, AMIs, Instance Types, Key Pairs, Security Groups, and Elastic IPs to understand the environment.
+2. Next, a new EC2 instance is launched by selecting the Amazon Linux 2 AMI and choosing the t2.micro instance type under the free tier, followed by configuring basic settings including the instance name, key pair for secure access, and default options.
+3. After launching, a security group is configured to act as a firewall by allowing inbound SSH access on port 22 from the user’s IP address and HTTP access on port 80 from anywhere, ensuring both secure and web-based connectivity.
+4. The user then connects to the running instance using SSH with the downloaded key pair and performs basic operations such as stopping, starting, and rebooting the instance while observing its state transitions in the EC2 console.
+5. Finally, the instance is monitored using the monitoring tab to view metrics like CPU utilization and network activity, and once the experiment is complete, the instance is terminated to prevent unnecessary charges.
 
 ---
 
