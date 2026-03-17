@@ -27,15 +27,16 @@ The objective of this lab is to understand how AWS Identity and Access Managemen
 - Reviewed pre-created IAM users: user-1, user-2, user-3  
 - Explored IAM groups: EC2-Admin, EC2-Support, S3-Support  
 - Inspected managed and inline policies attached to groups  
-**Screenshot:**  
-(Add screenshot here)
 
 ### Task 2: Add Users to Groups
 - Added user-1 to the S3-Support group  
 - Added user-2 to the EC2-Support group  
 - Added user-3 to the EC2-Admin group  
 **Screenshot:**  
-(Add screenshot here)
+<img width="1889" height="1034" alt="Screenshot 2026-02-07 161049" src="https://github.com/user-attachments/assets/129f1f47-4b30-4821-80c0-bbaf75a22119" />
+<img width="1914" height="1025" alt="Screenshot 2026-02-07 161127" src="https://github.com/user-attachments/assets/9d09b77b-f21f-486a-9399-440207d8b290" />
+<img width="1911" height="1016" alt="Screenshot 2026-02-07 161150" src="https://github.com/user-attachments/assets/b8889a3b-a3cb-4a53-bd91-868223bb4866" />
+
 
 ### Task 3: Test IAM User Permissions
 - Logged in using IAM sign-in URL  
@@ -43,7 +44,7 @@ The objective of this lab is to understand how AWS Identity and Access Managemen
 - Verified EC2 read-only access for user-2  
 - Verified EC2 administrative access for user-3  
 **Screenshot:**  
-(Add screenshot here)
+<img width="1916" height="1025" alt="Screenshot 2026-02-07 162455" src="https://github.com/user-attachments/assets/c530e67f-1a77-4104-b432-09e5da233e8c" />
 
 
 ## Workflow
